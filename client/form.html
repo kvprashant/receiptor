@@ -1,0 +1,44 @@
+<head>
+  <title>animus.io: Get ready to design better!</title>
+</head>
+
+<body>
+  {{> form}}
+</body>
+
+<template name="form">
+  <div id="receiptForm" class="large-10 columns large-centered">
+    <section class="section">
+      <h5 class="title">Animus + Metarefresh Receipt</h5>
+      <div data-slug="panel1" class="content">
+        <form>
+          <div class="row collapse">
+            <div class="large-2 columns">
+              <label class="inline">Full Name</label>
+            </div>
+            <div class="large-10 columns">
+              <input type="text" placeholder="Imran Parvez" id="yourName">
+            </div>
+          </div>
+          <div class="row collapse">
+            <div class="large-2 columns">
+              <label class="inline">Email</label>
+            </div>
+            <div class="large-10 columns">
+              <input type="text" placeholder="hello@animus.io" id="yourEmail">
+            </div>
+          </div>
+          <div class="row collapse">
+            <div class="large-2 columns">
+              <label class="inline">Number</label>
+            </div>
+            <div class="large-10 columns">
+              <input type="number" min="0" max="10" step="1" value="6" id="howMany">
+            </div>
+          </div>
+          <button id="send" class="radius button" type="submit">Send receipt</button>
+        </form>
+      </div>
+    </section>
+  </div>
+</template>
