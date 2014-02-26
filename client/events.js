@@ -18,6 +18,8 @@ Template.form.events ({
 			console.log('Number missing');
 			evt.preventDefault();
 		}
+		$('#addReceipt')[0].reset();
+		event.preventDefault();
 
 		Meteor.call('sendReceipt', name, email, number);
 	}
